@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.contenedor_boton{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+}
+img{
+    border-radius: 50%;
+    width: 250px;
+}
+.imagen_perfil{
+    width: 25%;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+}
+.nombre_puesto {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    color: orangered;
+}
+.titulo_principal{
+    align-self: center;
+    font-size: 2.5rem;
+}
+.subtitulo_principal {
+    align-self: center;
+    font-size: 2rem;
+}
+main {
+display: flex;
+}
+.primera_columna .segunda_columna{
+    display: flex;
+    flex-direction: column;
+}
+.primera_columna {
+    width: 35%;
+    background-color: orangered;
+    padding-top: 10px;
+}
+.info_primera {
+    margin-bottom: 15px ;
+}
+.info_primera ul{
+    width: 95%;
+    margin: auto;
+}
+.icono_contacto {
+    display: flex;
+}
+i {
+    margin-right: 5px;
+}
+.info_primera h3{
+    border-bottom: 2px solid rgb(34, 34, 34);
+    width: 95%;
+    margin: auto;
+    margin-bottom: 7px;
+    font-size: 1.5rem;
+}
+.info {
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+i {
+    width: 20px;
+}
+
+#idiomas p {
+    margin-left: 3px;
+}
+
+
+
+/*SEGUNDA COLUMNA*/
+.segunda_columna{
+    padding-top: 10px;
+}
+.info_segunda {
+    margin-bottom: 15px;
+}
+
+.info_segunda h3 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgb(34, 34, 34);
+    width: 97%;
+    margin: auto;
+}
+#perfil p {
+    width: 96%;
+    margin: auto;
+}
+#experiencia ul {
+    width: 96%;
+    margin: auto;
+    list-style-type: none;
+}
+.titulo {
+    font-size: 1.3rem;
+}
+.subtitulo {
+    font-size: 1.2rem;
+}
+.info_secundaria {
+    color: rgb(145, 145, 145);
+}
+#formacion ul {
+    width: 96%;
+    margin: auto;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 820px) {
+    .primera_columna {
+        display: none;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nombre_puesto, .imagen_perfil{
+        width: 100%;
+    }
+    .titulo_principal {
+        font-size: 2rem;
+    }
+    .subtitulo_principal {
+        font-size: 1.6rem;
+    }
+    .contenedor_boton{
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    button {
+        width: 30px;
+        cursor: pointer;
+        background-color: inherit;
+        border: none;
+    }
+    .linea{
+        width: 95%;
+        border-bottom: 3px solid orangered;
+        margin-bottom: 4px;
+        padding: 2px;
+    }
+    .boton{
+        width: 20px;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor_boton">
+            <div class="boton">
+                <button onclick="revelar()" class="boton_revelador" id="boton_revelador">
+                    <div class="linea"></div>
+                    <div class="linea"></div>
+                    <div class="linea"></div>
+                </button>
+            </div>
+        </div>
+        <div class="imagen_perfil">
+            <img src="./img/foto_perfil.jpg" alt="foto perfil">
+        </div>
+        <div class="nombre_puesto">
+            <h1 class="titulo_principal">Santiago Jose Curia</h1>
+            <h2 class="subtitulo_principal">Desarrollador web Trainee</h2>
+        </div>
+    </header>
+    <main>
+        <div class="primera_columna" id="primera_columna">
+            <section class="info_primera" id="contacto">
+                <h3>Contacto</h3>
+                <ul>
+                    <li class="icono_contacto">
+                        <i class="fa-solid fa-mobile"></i>
+                        <p class="info contacto">+54 9 11 5824-9044</p>
+                    </li>
+                    <li class="icono_contacto">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p class="info contacto">santiagocuria1711@gmail.com</p>
+                    </li>
+                    <li class="icono_contacto">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="info contacto">Capital Federal (Argentina)</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="info_primera" id="idiomas">
+                <h3>Idiomas</h3>
+                <ul>
+                    <li><p class="info">Español Latino (Nativo)</p></li>
+                    <li><p class="info">Ingles (B2)</p></li>
+                </ul>
+            </section>
+            <section class="info_primera">
+                <h3>Aptitudes</h3>
+                <ul>
+                    <li><p class="info">Trabajo en equipo</p></li>
+                    <li><p class="info">Capacidad analitico</p></li>
+                    <li><p class="info">Inteligencia emocional</p></li>
+                    <li><p class="info">Habilidades logicas</p></li>
+                </ul>
+            </section>
+            <section class="info_primera">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li><p class="info">HTML, CSS, JavaScript</p></li>
+                    <li><p class="info">Git</p></li>
+                    <li><p class="info">Bootstrap</p></li>
+                    <li><p class="info">React</p></li>
+                    <li><p class="info">Java</p></li>
+                </ul>
+            </section>
+            <section class="info_primera">
+                <h3>Otros Intereses</h3>
+                <ul>
+                    <li><p class="info">Ajedrez</p></li>
+                    <li><p class="info">Poker</p></li>
+                    <li><p class="info">Programacion</p></li>
+                </ul>
+            </section>
+        </div>
+        <div class="segunda_columna">
+            <section class="info_segunda" id="perfil">
+                <h3>Perfil</h3>
+                <p class="info">Soy una persona responsable que busca encontrar su primera oportunidad IT para poder desarrollarse tanto en lo profesional como lo personal.</p>
+            </section>
+            <section class="info_segunda" id="experiencia">
+                <h3>Experiencia laboral</h3>
+                <ul>
+                    <li>
+                        <h4 class="titulo">Community Manager</h4>
+                        <h5 class="subtitulo">Club Argentino de Ajedrez <span class="info_secundaria">(2020 - 2022)</span></h5>
+                        <p class="info">Duplique la cantidad de ventas y de socios mediante nuevas estrategias de marketing</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="info_segunda" id="formacion">
+                <h3>Formacion</h3>
+                <ul>
+                    <li>
+                        <h4 class="titulo">Bachiller en informatica</h4>
+                        <h5 class="subtitulo">Instituto inmaculada concepcion <span class="info_secundaria">(2014 - 2018)</span></h5>
+                        <p class="info">Estudios secundarios finalizados con un promedio de ...</p>
+                    </li>
+                    <li>
+                        <h4 class="titulo">Programacion web Fullstack NodeJS</h4>
+                        <h5 class="subtitulo">Codo a codo. Agencia de aprendizaje a lo largo de la vida <span class="info_secundaria"> (Ago 2021 - Dic 2021)</span></h5>
+                        <p class="info">Nos capacitarion en el uso de: 
+                            <ul>
+                                <li><p class="info"> El uso de base de datos relaciones MySql</p></li>
+                                <li><p class="info">En los lenguajes html, css y js (tanto en el frontend como el banckend)</p></li>
+                                <li><p class="info">Nos enseñaron a utilizar Bootstrap y NodeJS</p></li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="titulo">Programacion web Fullstack JAVA</h4>
+                        <h5 class="subtitulo">Argentina Programa. Ministerio de desarrollo productivo <span class="info_secundaria">  (en curso)</span></h5>
+                        <p class="info">Actualmente estoy cursando virtualmente en el campus de la UTN</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
