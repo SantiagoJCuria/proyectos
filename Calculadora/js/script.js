@@ -9,7 +9,7 @@ function añadirAPantalla(valor){
 function limpiarRespuesta (){
   respuestaActual = 0;
   let respuesta = document.getElementById("respuesta");
-  respuesta.value = "0";
+  respuesta.value = "";
 }
 
 function resultado(){
