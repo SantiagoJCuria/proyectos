@@ -9,32 +9,32 @@
 <body>
     <div class="contenedor_calculadora">
         <form>
-            <input type="text" readonly placeholder="0" class="respuesta">
+            <input type="text" readonly placeholder="0" id="respuesta">
             
             <input type="button" value="AC" class="agregado">
-            <input type="button" value="C" class="agregado">
-            <input type="button" value="/" class="agregado">
-            <input type="button" value="*" class="agregado">
+            <input type="button" value="C" class="agregado" onclick="borrar()">
+            <input type="button" value="/" class="agregado" onclick="dividir()">
+            <input type="button" value="*" class="agregado" onclick="multiplicar()">
                         
-            <input type="button" value="7" class="numero">
-            <input type="button" value="8" class="numero">
-            <input type="button" value="9" class="numero">
-            <input type="button" value="-" class="agregado">
+            <input type="button" value="7" class="numero" onclick="añadirResultado(7)">
+            <input type="button" value="8" class="numero" onclick="añadirResultado(8)">
+            <input type="button" value="9" class="numero" onclick="añadirResultado(9)">
+            <input type="button" value="-" class="agregado" onclick="restar()">
              
-            <input type="button" value="4" class="numero">
-            <input type="button" value="5" class="numero">
-            <input type="button" value="6" class="numero">
-            <input type="button" value="+" class="agregado">
+            <input type="button" value="4" class="numero" onclick="añadirResultado(4)">
+            <input type="button" value="5" class="numero" onclick="añadirResultado(5)">
+            <input type="button" value="6" class="numero" onclick="añadirResultado(6)">
+            <input type="button" value="+" class="agregado" onclick="sumar()">
                         
-            <input type="button" value="1" class="numero">
-            <input type="button" value="2" class="numero">
-            <input type="button" value="3" class="numero">
+            <input type="button" value="1" class="numero" onclick="añadirResultado(1)">
+            <input type="button" value="2" class="numero" onclick="añadirResultado(2)">
+            <input type="button" value="3" class="numero" onclick="añadirResultado(3)">
             <input type="button" value="." class="agregado">
             
             <input type="button" value="(" class="numero">
-            <input type="button" value="0" class="numero">
+            <input type="button" value="0" class="numero" onclick="añadirResultado(0)">
             <input type="button" value=")" class="numero">
-            <input type="button" value="=" class="agregado">
+            <input type="button" value="=" class="agregado" onclick="igual()">
  
  
 
