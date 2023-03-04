@@ -5,41 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="contenedor_calculadora">
-        <form>
-            <input type="text" readonly placeholder="0" id="respuesta">
-            
-            <input type="button" value="AC" class="agregado">
-            <input type="button" value="C" class="agregado" onclick="borrar()">
-            <input type="button" value="/" class="agregado" onclick="dividir()">
-            <input type="button" value="*" class="agregado" onclick="multiplicar()">
-                        
-            <input type="button" value="7" class="numero" onclick="añadirResultado(7)">
-            <input type="button" value="8" class="numero" onclick="añadirResultado(8)">
-            <input type="button" value="9" class="numero" onclick="añadirResultado(9)">
-            <input type="button" value="-" class="agregado" onclick="restar()">
-             
-            <input type="button" value="4" class="numero" onclick="añadirResultado(4)">
-            <input type="button" value="5" class="numero" onclick="añadirResultado(5)">
-            <input type="button" value="6" class="numero" onclick="añadirResultado(6)">
-            <input type="button" value="+" class="agregado" onclick="sumar()">
-                        
-            <input type="button" value="1" class="numero" onclick="añadirResultado(1)">
-            <input type="button" value="2" class="numero" onclick="añadirResultado(2)">
-            <input type="button" value="3" class="numero" onclick="añadirResultado(3)">
-            <input type="button" value="." class="agregado">
-            
-            <input type="button" value="(" class="numero">
-            <input type="button" value="0" class="numero" onclick="añadirResultado(0)">
-            <input type="button" value=")" class="numero">
-            <input type="button" value="=" class="agregado" onclick="igual()">
- 
- 
-
-        </form>
-    </div>
+    <main>
+        <section class="pantalla">
+            <input type="text" readonly id="respuesta" placeholder="0">
+        </section>
+        <section class="teclado">
+            <div class="primera">
+                <button class="boton numeros primera-fila">AC</button><button class="boton numeros primera-fila" onclick="limpiarRespuesta()">C</button><button class="boton numeros primera-fila"  onclick="porcentaje()">%</button><button class="boton numeros ultima-columna"  onclick="suma()">+</button>
+            </div>
+            <div class="segunda">
+                <button class="boton numeros"  onclick="añadirAPantalla(7)">7</button><button class="boton numeros"  onclick="añadirAPantalla(8)">8</button><button class="boton numeros"  onclick="añadirAPantalla(9)">9</button><button class="boton numeros ultima-columna" onclick="multiplicacion()">*</button>
+            </div>
+            <div class="tercera">
+                <button class="boton numeros"  onclick="añadirAPantalla(4)">4</button><button class="boton numeros"  onclick="añadirAPantalla(5)">5</button><button class="boton numeros"  onclick="añadirAPantalla(6)">6</button><button class="boton numeros ultima-columna" onclick="resta()">-</button>
+            </div>
+            <div class="cuarta">
+                <button class="boton numeros"  onclick="añadirAPantalla(1)">1</button><button class="boton numeros"  onclick="añadirAPantalla(2)">2</button><button class="boton numeros"  onclick="añadirAPantalla(3)">3</button><button class="boton numeros ultima-columna" onclick="division()">/</button>
+            </div>
+            <div class="quinta">
+            <button class="boton numeros" onclick="parentesis()">(</button><button class="boton numeros"  onclick="añadirAPantalla(0)">0</button><button class="boton numeros" onclick="parentesisCierre()">)</button><button class="boton numeros ultima-columna" onclick="resultado()" >=</button>
+            </div>
+        </section>
+    </main>
     <script src="./js/script.js"></script>
 </body>
 </html>

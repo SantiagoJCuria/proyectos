@@ -1,64 +1,48 @@
-var ResultadoActual = 0;
-var operadorActual = "";
+let elemento = "8+8-3";
+console.log(eval(elemento));
 
-function añadirResultado(valor) {
-  var result = document.getElementById("respuesta");
-  result.valor += valor;
+let respuestaActual = 0;
+function añadirAPantalla(valor){
+  let respuesta = document.getElementById("respuesta");
+  respuesta.value += valor;
+}
+function limpiarRespuesta (){
+  respuestaActual = 0;
+  let respuesta = document.getElementById("respuesta");
+  respuesta.value = "0";
 }
 
-function borrar() {
-  ResultadoActual = 0;
-  operadorActual = "";
-  var result = document.getElementById("respuesta");
-  result.valor = "";
+function resultado(){
+  let respuesta = document.getElementById("respuesta");
+  let valor = eval(respuesta.value);
+  respuesta.value = valor;
 }
 
-function sumar() {
-  ResultadoActual = parseFloat(document.getElementById("respuesta").valor);
-  operadorActual = "+";
-  var result = document.getElementById("respuesta");
-  result.valor = "";
+function suma(){
+  let respuesta = document.getElementById("respuesta");
+  respuesta.value += "+";
 }
-
-function restar() {
-  ResultadoActual = parseFloat(document.getElementById("respuesta").valor);
-  operadorActual = "-";
-  var result = document.getElementById("respuesta");
-  result.valor = "";
+function resta(){
+  let respuesta = document.getElementById("respuesta");
+  respuesta.value += "-";
 }
-
-function multiplicar() {
-  ResultadoActual = parseFloat(document.getElementById("respuesta").valor);
-  operadorActual = "*";
-  var result = document.getElementById("respuesta");
-  result.valor = "";
+function division(){
+  let respuesta = document.getElementById("respuesta");
+  respuesta.value += "/";
 }
-
-function dividir() {
-  ResultadoActual = parseFloat(document.getElementById("respuesta").valor);
-  operadorActual = "/";
-  var result = document.getElementById("respuesta");
-  result.valor = "";
+function multiplicacion(){
+  let respuesta = document.getElementById("respuesta");
+  respuesta.value += "*";
 }
-
-function igual() {
-  var result = document.getElementById("respuesta");
-  var valor = parseFloat(result.valor);
-  switch(operadorActual) {
-    case "+":
-      ResultadoActual += valor;
-      break;
-    case "-":
-      ResultadoActual -= valor;
-      break;
-    case "*":
-      ResultadoActual *= valor;
-      break;
-    case "/":
-      ResultadoActual /= valor;
-      break;
-    default:
-      ResultadoActual = valor;
-  }
-  result.valor = ResultadoActual;
+function parentesis(){
+  let respuesta = document.getElementById("respuesta");
+  respuesta.value += "(";
+}
+function parentesisCierre(){
+  let respuesta = document.getElementById("respuesta");
+  respuesta.value += ")";
+}
+function porcentaje(){
+  let respuesta = document.getElementById("respuesta");
+  respuesta.value += "%";
 }
