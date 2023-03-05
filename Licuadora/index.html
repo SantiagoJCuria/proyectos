@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Licuadora</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="contenedor">
         <div class="licuadora">
-            <img src="./img/licuadoraOFF.gif" alt="foto apagado">
-            <img src="./img/licuadoraON.gif" alt="foto prendido" id="imagen-prendida">
+            <img src="./img/licuadoraOFF.gif" alt="foto apagado" id="imagenapagado">
+            <img src="./img/licuadoraON.gif" alt="foto prendido" id="imagenprendida">
             <div class="boton">
-                <button></button>
+                <button id="btn" onclick="prender()"></button>
             </div>
         </div>
     </div>
+    <audio src="./sonido/sonidolicuadora.mp3" type="audio/mpeg" loop id="sonidoLicuadora"></audio>
+    <audio src="./sonido/sonidoClick.mp3" type="audio/mpeg" id="sonidoClick"></audio>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
