@@ -7,7 +7,7 @@ function encender() {
      actualizacion = setInterval(() => {
         let tiempoValor = parseFloat(tiempo.innerHTML);
         let segundos = tiempoValor + 1;
-        tiempo.innerHTML = segundos ;
+        tiempo.innerHTML =  segundos ;
     }, 1000); 
 
 }
