@@ -43,6 +43,7 @@ body{
 .tareas{
     width: 100%;
     justify-content: center;
+    margin-bottom: 40px;
 }
 table {
     margin: auto;
@@ -78,4 +79,8 @@ table button {
 }
 .finalizado {
     background-color: rgb(0, 202, 17);
+}
+.completas p {
+    text-align: center;
+    font-weight: 700;
 }
